@@ -12,7 +12,7 @@ namespace p2pcopy
         static internal void Run(Udt.Socket conn)
         {
             int ini = Environment.TickCount;
-
+            int ini = Environment.TickCount;
             using (Udt.NetworkStream netStream = new Udt.NetworkStream(conn))
             using (BinaryWriter writer = new BinaryWriter(netStream))
             using (BinaryReader reader = new BinaryReader(netStream))
